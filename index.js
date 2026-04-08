@@ -20,15 +20,13 @@ main().then(()=>
 .catch(err => console.log(err));
 
 //database connectivity
-async function main() {
+async function main() 
+{
   
     await mongoose.connect('mongodb://127.0.0.1:27017/whatsapp');
-
-  
 }
 
 //show all chats route:-
-
 app.get("/chats",async (req,res)=>
 {
     let chats= await chat.find();
@@ -41,7 +39,7 @@ app.get("/chats",async (req,res)=>
 app.get("/chats/new",(req,res)=>
 {
     res.render("new.ejs");
-})
+});
 
 
 //create route:-
@@ -75,7 +73,7 @@ app.get("/chats/:id/edit", async (req,res)=>
     let {id}= req.params;
      let Chat = await chat.findById(id);
     res.render("edit.ejs", {Chat});
-})
+});
 
 
 //UPDATE ROUTE:-
@@ -90,7 +88,7 @@ app.put("/chats/:id", async (req,res)=>
     
     console.log(updatedchat);
     res.redirect("/chats")
-})
+});
 
 //destroy route:-
 app.delete("/chats/:id",async (req,res)=>
@@ -99,7 +97,7 @@ app.delete("/chats/:id",async (req,res)=>
     let deletedchat= await chat.findByIdAndDelete(id);
     console.log(deletedchat);
     res.redirect("/chats");
-})
+});
 
 //home route to check if server is working or not
 app.get("/",(req,res)=>
