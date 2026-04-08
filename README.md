@@ -153,7 +153,7 @@ DELETE  /chats/:id       → Delete chat
 ## 👩‍💻 Author
 
 Akanksha
-Second Year Computer Science Student
+Third Year Computer Science Student
 
 ---
 
