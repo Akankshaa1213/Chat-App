@@ -7,12 +7,7 @@ This app allows users to create, read, update, and delete chat messages between 
 
 ## 🚀 Features
 
-- Create, Read, Update, Delete chats (CRUD)
-- RESTful routing
-- MongoDB database integration
-- Server-side rendering using EJS
-- Input validation using Joi
-- Proper error handling with HTTP status codes
+
 
 ---
 
@@ -26,29 +21,28 @@ This app allows users to create, read, update, and delete chat messages between 
 
 ---
 
+## 📂 Project Structure
 
-## 📁 Project Structure
+project/
+│
+├── mongo/
+│   ├── models/
+│   │   └── chat.js
+│   ├── index.js
+│   └── init.js
+│
+├── public/
+│   └── style.css
+│
+├── views/
+│   ├── index.ejs
+│   ├── new.ejs
+│   └── edit.ejs
+│
+├── package.json
+├── package-lock.json
+└── node_modules/
 
-mongo/
-│── models/
-│   └── chat.js# Mongoose schema
-│
-│── views/
-│   ├── index.ejs# Show all chats
-│   ├── new.ejs# Create chat form
-│   └── edit.ejs# Edit chat form
-│
-│── public/
-│   └── style.css# Styling
-│
-│── validate/
-│   └── chatvalidation.js# Joi validation logic
-│
-│── index.js# Main server file
-│── init.js# Initial data setup
-│── package.json# Dependencies
-│── package-lock.json
-│── README.md
 ---
 
 ## ⚙️ Installation & Setup
