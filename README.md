@@ -7,12 +7,12 @@ This app allows users to create, read, update, and delete chat messages between 
 
 ## 🚀 Features
 
-* Create new chats
-* View all chats
-* Edit existing messages
-* Delete chats
-* Timestamp for each message
-* Simple UI using CSS
+- Create, Read, Update, Delete chats (CRUD)
+- RESTful routing
+- MongoDB database integration
+- Server-side rendering using EJS
+- Input validation using Joi
+- Proper error handling with HTTP status codes
 
 ---
 
