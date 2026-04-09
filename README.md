@@ -23,11 +23,14 @@ This app allows users to create, read, update, and delete chat messages between 
 
 ## 📂 Project Structure
 
+
 project/
 │
 ├── mongo/
 │   ├── models/
 │   │   └── chat.js
+│   ├── validate/
+│   │   └── chatvalidation.js
 │   ├── index.js
 │   └── init.js
 │
@@ -42,6 +45,7 @@ project/
 ├── package.json
 ├── package-lock.json
 └── node_modules/
+
 
 ---
 
