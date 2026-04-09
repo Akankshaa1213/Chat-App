@@ -28,26 +28,28 @@ This app allows users to create, read, update, and delete chat messages between 
 
 ## 📂 Project Structure
 
-project/
-│
-├── mongo/
-│   ├── models/
-│   │   └── chat.js
-│   ├── index.js
-│   └── init.js
-│
-├── public/
-│   └── style.css
-│
-├── views/
-│   ├── index.ejs
-│   ├── new.ejs
-│   └── edit.ejs
-│
-├── package.json
-├── package-lock.json
-└── node_modules/
+## 📁 Project Structure
 
+mongo/
+│── models/
+│   └── chat.js              # Mongoose schema
+│
+│── views/
+│   ├── index.ejs            # Show all chats
+│   ├── new.ejs              # Create chat form
+│   └── edit.ejs             # Edit chat form
+│
+│── public/
+│   └── style.css            # Styling
+│
+│── validate/
+│   └── chatvalidation.js    # Joi validation logic
+│
+│── index.js                 # Main server file
+│── init.js                  # Initial data setup
+│── package.json             # Dependencies
+│── package-lock.json
+│── README.md
 ---
 
 ## ⚙️ Installation & Setup
